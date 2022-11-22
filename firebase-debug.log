@@ -1,0 +1,57 @@
+[debug] [2022-11-22T19:58:58.659Z] ----------------------------------------------------------------------
+[debug] [2022-11-22T19:58:58.659Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init hosting:github
+[debug] [2022-11-22T19:58:58.660Z] CLI Version:   11.16.1
+[debug] [2022-11-22T19:58:58.660Z] Platform:      darwin
+[debug] [2022-11-22T19:58:58.660Z] Node Version:  v16.18.0
+[debug] [2022-11-22T19:58:58.663Z] Time:          Tue Nov 22 2022 14:58:58 GMT-0500 (Eastern Standard Time)
+[debug] [2022-11-22T19:58:58.663Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-22T19:58:58.695Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-22T19:58:58.695Z] > authorizing via signed-in user (erica4350@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ericahickson/Desktop/personal/unit-9-db/03-shoutouts-copy/frontend
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-22T19:58:58.697Z] Using project from CLI flag: shoutouts-1f7cf
+[debug] [2022-11-22T19:58:58.699Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shoutouts-1f7cf [none]
+[debug] [2022-11-22T19:58:58.950Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shoutouts-1f7cf 200
+[debug] [2022-11-22T19:58:58.950Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shoutouts-1f7cf {"projectId":"shoutouts-1f7cf","projectNumber":"39182492711","displayName":"shoutouts","name":"projects/shoutouts-1f7cf","resources":{"hostingSite":"shoutouts-1f7cf","storageBucket":"shoutouts-1f7cf.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_b89c1a96-e310-41cb-b49d-971d1d04d32e"}
+[info] i  Using project shoutouts-1f7cf (shoutouts) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/ericahickson/Desktop/personal/unit-9-db/03-shoutouts-copy/frontend is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=635357551&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-11-22T19:59:14.881Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-11-22T19:59:14.881Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-11-22T19:59:15.273Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-11-22T19:59:15.274Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-11-22T19:59:15.300Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-11-22T19:59:15.618Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-11-22T19:59:15.618Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ehix1","id":111822837,"node_id":"U_kgDOBqpH9Q","avatar_url":"https://avatars.githubusercontent.com/u/111822837?v=4","gravatar_id":"","url":"https://api.github.com/users/ehix1","html_url":"https://github.com/ehix1","followers_url":"https://api.github.com/users/ehix1/followers","following_url":"https://api.github.com/users/ehix1/following{/other_user}","gists_url":"https://api.github.com/users/ehix1/gists{/gist_id}","starred_url":"https://api.github.com/users/ehix1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ehix1/subscriptions","organizations_url":"https://api.github.com/users/ehix1/orgs","repos_url":"https://api.github.com/users/ehix1/repos","events_url":"https://api.github.com/users/ehix1/events{/privacy}","received_events_url":"https://api.github.com/users/ehix1/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":17,"public_gists":0,"followers":1,"following":0,"created_at":"2022-08-23T00:45:36Z","updated_at":"2022-08-28T01:52:05Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":20352,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ehix1 
+[info] 
